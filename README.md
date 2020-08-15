@@ -117,6 +117,12 @@ tensorflow-tts-preprocess --rootdir ./datasets --outdir ./dump --config preproce
 tensorflow-tts-normalize --rootdir ./dump --outdir ./dump --config preprocess/ljspeech_preprocess.yaml --dataset ljspeech
 ```
 
+And for KSS
+```
+tensorflow-tts-preprocess --rootdir ./datasets --outdir ./dump --config preprocess/kss_preprocess.yaml --dataset kss
+tensorflow-tts-normalize --rootdir ./dump --outdir ./dump --config preprocess/kss_preprocess.yaml --dataset kss
+```
+
 Right now we only support [`ljspeech`](https://keithito.com/LJ-Speech-Dataset/) and [`kss`](https://www.kaggle.com/bryanpark/korean-single-speaker-speech-dataset) for dataset argument. In the future, we intend to support more datasets.
 
 After preprocessing, the structure of the project folder should be:
