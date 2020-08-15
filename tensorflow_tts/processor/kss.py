@@ -30,7 +30,7 @@ class KSSProcessor(object):
     """KSS processor."""
 
     def __init__(
-        self, data_dir, cleaner_names, metadata_filename="transcript.v.1.2.txt"
+        self, data_dir, cleaner_names, metadata_filename="transcript.v.1.4.txt"
     ):
         self.data_dir = data_dir
         self.cleaner_names = cleaner_names
